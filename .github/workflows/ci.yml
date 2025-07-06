@@ -25,6 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Set up Python path for calculator
+        run: |
+          export PYTHONPATH=$(pwd)  # カレントディレクトリをPythonパスに追加
+
       - name: Run tests
         run: |
-          pytest ./tests  # testsフォルダを指定
+          pytest ./tests  # testsディレクトリを指定
