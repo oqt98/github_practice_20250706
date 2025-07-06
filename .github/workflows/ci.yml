@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          pytest ./tests  # testsディレクトリを指定
