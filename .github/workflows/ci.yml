@@ -27,4 +27,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest ./tests  # testsディレクトリを指定
+          pytest ./tests  # testsフォルダを指定
